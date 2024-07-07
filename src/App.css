@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: url('./assets/Background (2).jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  margin: 10px;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(145deg, #2c3e50, #34495e);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(145deg, #34495e, #2c3e50);
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5), inset -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.chatbot {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.clock-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.clock {
+  font-size: 24px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
